@@ -12,8 +12,8 @@ public class player_movement : MonoBehaviour
     private CharacterController character;
     private float fallingSpeed = -10;
 
-    [SerializeField]
-    private float speed = 1f;
+    
+    public float speed = 1f;
     private XROrigin rig;
     // Start is called before the first frame update
     void Start()

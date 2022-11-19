@@ -10,11 +10,13 @@ public class Player_damage : MonoBehaviour
     private CharacterController controller;
 
     private bool isdead = false;
+
+    private player_movement movement;
     // Start is called before the first frame update
     void Start()
     {
         controller = GetComponent<CharacterController>();
-        
+        movement = GetComponent<player_movement>();
     }
 
     // Update is called once per frame
@@ -31,7 +33,7 @@ public class Player_damage : MonoBehaviour
             Debug.Log("Player Death");
             controller.enabled= false;
 
-
+            movement.speed = 0;
             isdead = true;
             transform.position = RespawnPlayer.position;
             StartCoroutine(Killplayer());
@@ -45,7 +47,8 @@ public class Player_damage : MonoBehaviour
         yield return new WaitForSeconds(2);
 
         //Debug.Log("Respawn");
-        
+
+        movement.speed = 4;
         controller.enabled = true;
         isdead = false;
     }
