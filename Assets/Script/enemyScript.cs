@@ -29,5 +29,12 @@ public class enemyScript : MonoBehaviour
         // check for player collision. If true, playerStatusDeath = true
     }
 
-  
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.name=="Wall")
+        {
+
+        }
+    }
+
 }
