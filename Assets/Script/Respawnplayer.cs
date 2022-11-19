@@ -11,6 +11,8 @@ public class Respawnplayer : MonoBehaviour
     void Start()
     {
         box = GetComponent<BoxCollider>();
+        respawnplayer = GameObject.FindWithTag("respawner");
+
     }
 
     // Update is called once per frame
@@ -25,6 +27,7 @@ public class Respawnplayer : MonoBehaviour
         {
             Debug.Log("next");
             respawnplayer.transform.position = this.transform.position;
+            respawnplayer.transform.position = new Vector3(respawnplayer.transform.position.x, respawnplayer.transform.position.y + 2, respawnplayer.transform.position.z);
             box.enabled = false;
         }
     }
