@@ -9,20 +9,23 @@ public class enemyScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        sphere = GetComponent<SphereCollider>();
+        sphere = gameObject.GetComponent<SphereCollider>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        void OnCollisionEnter(Collision otherObj)
+        
+       
+    }
+
+    private void OnTriggerEnter(Collider col)
+    {
+        if (col.gameObject.gameObject.CompareTag( "Player"))
         {
-            if (otherObj.gameObject.tag == "Player")
-            {
-                Destroy(gameObject, .5f);
-                Debug.Log("Player Death");
-            }
-            // check for player collision. If true, playerStatusDeath = true
+            //Destroy(gameObject, .5f);
+            Debug.Log("Player Death");
         }
+        // check for player collision. If true, playerStatusDeath = true
     }
 }
