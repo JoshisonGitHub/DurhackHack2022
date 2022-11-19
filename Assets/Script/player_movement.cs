@@ -10,7 +10,7 @@ public class player_movement : MonoBehaviour
     public XRNode inputSource;
     private Vector2 inputAxis;
     private CharacterController character;
-    public float gravity = -9.81f;
+    private float fallingSpeed = -10;
 
     [SerializeField]
     private float speed = 1f;
@@ -36,5 +36,6 @@ public class player_movement : MonoBehaviour
         Quaternion headYaw = Quaternion.Euler(0, rig.Camera.transform.eulerAngles.y, 0);
         Vector3 direction = headYaw * new Vector3(inputAxis.x, 0, inputAxis.y);
         character.Move(direction * speed * Time.fixedDeltaTime);
+        character.Move(Vector3.up * fallingSpeed * Time.fixedDeltaTime);
     }
 }
