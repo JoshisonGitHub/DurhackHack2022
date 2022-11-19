@@ -111,7 +111,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59ba4fe5d808d2b4fb2930a1c311ce92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  respawnplayer: {fileID: 0}
+  respawnplayer: {fileID: 8356153968661644582, guid: d4d5614aea8df384c9b34a67e8989ea0,
+    type: 3}
 --- !u!65 &8323192686678650351
 BoxCollider:
   m_ObjectHideFlags: 0
