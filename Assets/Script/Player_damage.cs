@@ -42,7 +42,7 @@ public class Player_damage : MonoBehaviour
 
     private IEnumerator Killplayer()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(2);
 
         //Debug.Log("Respawn");
         
