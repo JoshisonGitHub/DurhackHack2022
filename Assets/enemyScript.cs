@@ -19,13 +19,15 @@ public class enemyScript : MonoBehaviour
        
     }
 
-    private void OnTriggerEnter(Collider col)
+    private void OnTriggerEnter(Collider other)
     {
-        if (col.gameObject.gameObject.CompareTag( "Player"))
+        if (other.gameObject.tag.Equals( "Player"))
         {
             //Destroy(gameObject, .5f);
             Debug.Log("Player Death");
         }
         // check for player collision. If true, playerStatusDeath = true
     }
+
+  
 }
