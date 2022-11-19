@@ -10,6 +10,7 @@ public class player_movement : MonoBehaviour
     public XRNode inputSource;
     private Vector2 inputAxis;
     private CharacterController character;
+    public float gravity = -9.81f;
 
     [SerializeField]
     private float speed = 1f;
