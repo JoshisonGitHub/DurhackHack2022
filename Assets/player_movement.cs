@@ -1,75 +1,41 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class player_movement : MonoBehaviour
 {
-    public CharacterController controller;
-    public float speed;
+    public XRNode inputSource;
 
+    private Vector2 inputAxis;
 
-    public KeyCode forwards;
-    public KeyCode backwards;
-    public KeyCode left;
-    public KeyCode right;
+    private CharacterController character;
 
-    
+    [SerializeField]
+    private float speed = 1f;
 
-    private static float g = -1f;
-    private Vector3[] inputs = new Vector3[4];
-    private Vector3 moveinput;
-
-    private bool isdead = false;
-
-    private MeshRenderer mesh;
+    private XRRig rig;
     // Start is called before the first frame update
     void Start()
     {
-        inputs[0] = new Vector3(-1, g, 0);
-        inputs[1] = new Vector3(1, g, 0);
-        inputs[2] = new Vector3(0, g, 1);
-        inputs[3] = new Vector3(0, g, -1);
+        character = GetComponent<CharacterController>();
 
-        mesh = GetComponent<MeshRenderer>();
+        rig = GetComponent<XRRig>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-            if (Input.GetKey(left))
-            {
-                moveinput = inputs[0];
-            }
-            else if (Input.GetKey(right))
-            {
-                moveinput = inputs[1];
-            }
-            else if (Input.GetKey(forwards))
-            {
-                moveinput = inputs[2];
-            }
-            else if (Input.GetKey(backwards))
-            {
-                moveinput = inputs[3];
-            }
-            else
-            {
-                moveinput = new Vector3(0, g, 0);
-            }
-        
-        
-        if (!isdead)
-        {
-            controller.Move(moveinput * speed * Time.deltaTime);
-        }
+        InputDevice device = InputDevices.GetDeviceAtXRNode(inputSource);
+        device.TryGetFeatureValue(CommonUsages.primary2DAxis, out inputAxis);
+            
+    }
 
-        if (Input.GetKeyDown(KeyCode.T))
-        {
-            inputs[0] = new Vector3(-1, g, 0);
-            inputs[1] = new Vector3(1, g, 0);
-            inputs[2] = new Vector3(0, g, 1);
-            inputs[3] = new Vector3(0, g, -1);
-        }
+    private void FixedUpdate()
+    {
+        Quaternion headYaw = Quaternion.Euler(0, rig.cameraGameObject.transform.eulerAngles.y, 0);
+        Vector3 direction = new Vector3(inputAxis.x, 0, inputAxis.y);
+        character.Move(direction * speed * Time.deltaTime);
     }
 }
