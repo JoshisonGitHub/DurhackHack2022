@@ -7,13 +7,14 @@ public class Player_damage : MonoBehaviour
 {
     public Transform RespawnPlayer;
 
-    private BoxCollider box;
+    private CharacterController controller;
 
     private bool isdead = false;
     // Start is called before the first frame update
     void Start()
     {
-        box = GetComponent<BoxCollider>();
+        controller = GetComponent<CharacterController>();
+        
     }
 
     // Update is called once per frame
@@ -28,7 +29,7 @@ public class Player_damage : MonoBehaviour
         {
             
             Debug.Log("Player Death");
-            box.enabled = false;
+            controller.enabled= false;
 
 
             isdead = true;
@@ -45,7 +46,7 @@ public class Player_damage : MonoBehaviour
 
         //Debug.Log("Respawn");
         
-        box.enabled = true;
+        controller.enabled = true;
         isdead = false;
     }
     

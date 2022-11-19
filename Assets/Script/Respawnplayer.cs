@@ -6,11 +6,11 @@ public class Respawnplayer : MonoBehaviour
 {
     public GameObject respawnplayer;
 
-    private CapsuleCollider cap;
+    private BoxCollider box;
     // Start is called before the first frame update
     void Start()
     {
-        cap = GetComponent<CapsuleCollider>();
+        box = GetComponent<BoxCollider>();
     }
 
     // Update is called once per frame
@@ -25,7 +25,7 @@ public class Respawnplayer : MonoBehaviour
         {
             Debug.Log("next");
             respawnplayer.transform.position = this.transform.position;
-            cap.enabled = false;
+            box.enabled = false;
         }
     }
 }
