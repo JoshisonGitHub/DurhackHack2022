@@ -6415,7 +6415,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 322a8316f2cc67a4384f02ccab69cf22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RespawnPlayer: {fileID: 0}
+  RespawnPlayer: {fileID: 540521169}
 --- !u!143 &1033506954
 CharacterController:
   m_ObjectHideFlags: 0

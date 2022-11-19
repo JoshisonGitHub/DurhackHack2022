@@ -1362,7 +1362,7 @@ GameObject:
   - component: {fileID: 205435938}
   - component: {fileID: 205435937}
   m_Layer: 0
-  m_Name: VR rig (character) (1)
+  m_Name: VR rig
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1393,7 +1393,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 322a8316f2cc67a4384f02ccab69cf22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RespawnPlayer: {fileID: 0}
+  RespawnPlayer: {fileID: 1175259873}
 --- !u!143 &205435939
 CharacterController:
   m_ObjectHideFlags: 0
