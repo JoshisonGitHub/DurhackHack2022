@@ -43,8 +43,13 @@ MonoBehaviour:
     width: 1463
     height: 818
   m_ShowMode: 4
+<<<<<<< HEAD
   m_Title: Hierarchy
   m_RootView: {fileID: 9}
+=======
+  m_Title: Inspector
+  m_RootView: {fileID: 6}
+>>>>>>> 8e9d634b2a4a48785b579b7053cb571297f92aea
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
@@ -141,10 +146,17 @@ MonoBehaviour:
     x: 1135
     y: 0
     width: 328
+<<<<<<< HEAD
     height: 768
   m_MinSize: {x: 276, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 20}
+=======
+    height: 774
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 17}
+>>>>>>> 8e9d634b2a4a48785b579b7053cb571297f92aea
   m_Panes:
   - {fileID: 20}
   - {fileID: 17}
@@ -567,22 +579,36 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
+<<<<<<< HEAD
     - Assets/Scenes
+=======
+    - Assets
+>>>>>>> 8e9d634b2a4a48785b579b7053cb571297f92aea
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
+<<<<<<< HEAD
   - Assets/Scenes
+=======
+  - Assets
+>>>>>>> 8e9d634b2a4a48785b579b7053cb571297f92aea
   m_LastFoldersGridSize: -1
   m_LastProjectPath: /Users/jezza/Desktop/Durhack2022/DurhackHack2022
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
     m_SelectedIDs: e25f0000
     m_LastClickedID: 24546
     m_ExpandedIDs: 00000000a05f000000ca9a3bffffff7f
+=======
+    m_SelectedIDs: 7c5f0000
+    m_LastClickedID: 24444
+    m_ExpandedIDs: 0000000000ca9a3b
+>>>>>>> 8e9d634b2a4a48785b579b7053cb571297f92aea
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -635,9 +661,15 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
+<<<<<<< HEAD
     m_SelectedInstanceIDs: 5c610000
     m_LastClickedInstanceID: 24924
     m_HadKeyboardFocusLastEvent: 0
+=======
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
+    m_HadKeyboardFocusLastEvent: 1
+>>>>>>> 8e9d634b2a4a48785b579b7053cb571297f92aea
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -654,7 +686,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 5}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -702,7 +734,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 93.714294
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
@@ -740,9 +772,15 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
       m_SelectedIDs: 
       m_LastClickedID: 0
       m_ExpandedIDs: f4b9ffff5abafffff8baffff46bbffff4af8ffffd2f8ffff28f9ffffdefaffff
+=======
+      m_SelectedIDs: 0a5f0000
+      m_LastClickedID: 24330
+      m_ExpandedIDs: 30fbffff
+>>>>>>> 8e9d634b2a4a48785b579b7053cb571297f92aea
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1075,11 +1113,19 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: -0.07046933, y: -0.38873932, z: 0.029834094, w: -0.91816974}
     speed: 2
+<<<<<<< HEAD
     m_Value: {x: -0.070468985, y: -0.3887374, z: 0.029833948, w: -0.91816527}
   m_Size:
     m_Target: 0.8660254
     speed: 2
     m_Value: 0.8660254
+=======
+    m_Value: {x: 0.24275282, y: 0.47745, z: -0.13916858, w: 0.83292675}
+  m_Size:
+    m_Target: 0.7477265
+    speed: 2
+    m_Value: 0.7477265
+>>>>>>> 8e9d634b2a4a48785b579b7053cb571297f92aea
   m_Ortho:
     m_Target: 0
     speed: 2
