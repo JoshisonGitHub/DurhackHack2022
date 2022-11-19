@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8435019985865002004}
   - component: {fileID: 8435019985865002005}
   - component: {fileID: 8435019985865002026}
+  - component: {fileID: 7281899823803353541}
   m_Layer: 0
   m_Name: Sphere-Enemy
   m_TagString: Enemy
@@ -33,7 +34,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &8435019985865002007
 MeshFilter:
@@ -110,3 +111,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f9eb2a336d8346029e861f3fd49c4ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!54 &7281899823803353541
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8435019985865002027}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
