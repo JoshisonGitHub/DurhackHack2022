@@ -25,18 +25,25 @@ public class Player_damage : MonoBehaviour
             //Destroy(gameObject, .5f);
             Debug.Log("Player Death");
             //Die();
+            killplayer();
             
         }
         // check for player collision. If true, playerStatusDeath = true
     }
 
+    private void killplayer()
+    {
+#pragma warning disable CS0618 // Type or member is obsolete
+        Application.LoadLevel(Application.loadedLevel);
+#pragma warning restore CS0618 // Type or member is obsolete
+    }
     IEnumerator Die()
     {
-        
+
 
         
         yield return new WaitForSeconds(2);
-
+        Debug.Log("isdead");
 #pragma warning disable CS0618 // Type or member is obsolete
         Application.LoadLevel(Application.loadedLevel);
 #pragma warning restore CS0618 // Type or member is obsolete
