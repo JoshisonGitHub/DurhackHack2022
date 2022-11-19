@@ -5,7 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class Player_damage : MonoBehaviour
 {
+    public Transform RespawnPlayer;
+
     private BoxCollider box;
+
+    private bool isdead = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,33 +26,29 @@ public class Player_damage : MonoBehaviour
     {
         if (other.gameObject.tag.Equals("Enemy"))
         {
-            //Destroy(gameObject, .5f);
-            Debug.Log("Player Death");
-            //Die();
-            killplayer();
             
+            Debug.Log("Player Death");
+            box.enabled = false;
+
+
+            isdead = true;
+            transform.position = RespawnPlayer.position;
+            StartCoroutine(Killplayer());
+
         }
         // check for player collision. If true, playerStatusDeath = true
     }
 
-    private void killplayer()
+    private IEnumerator Killplayer()
     {
-#pragma warning disable CS0618 // Type or member is obsolete
-        Application.LoadLevel(Application.loadedLevel);
-#pragma warning restore CS0618 // Type or member is obsolete
-    }
-    IEnumerator Die()
-    {
+        yield return new WaitForSeconds(1);
 
-
+        //Debug.Log("Respawn");
         
-        yield return new WaitForSeconds(2);
-        Debug.Log("isdead");
-#pragma warning disable CS0618 // Type or member is obsolete
-        Application.LoadLevel(Application.loadedLevel);
-#pragma warning restore CS0618 // Type or member is obsolete
-
+        box.enabled = true;
+        isdead = false;
     }
+    
     
 
 

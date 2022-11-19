@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 9109066988131214520}
   - component: {fileID: 174485578999426060}
   - component: {fileID: 6621854502624881742}
+  - component: {fileID: 8190214158236165374}
   m_Layer: 0
   m_Name: green cube
   m_TagString: Untagged
@@ -32,7 +33,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &9109066988131214520
 MeshFilter:
@@ -97,3 +98,16 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8190214158236165374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7871356537898045427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59ba4fe5d808d2b4fb2930a1c311ce92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  respawnplayer: {fileID: 0}
