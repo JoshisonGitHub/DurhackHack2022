@@ -6570,23 +6570,15 @@ MonoBehaviour:
   m_EnableTurnLeftRight: 1
   m_EnableTurnAround: 1
   m_LeftHandSnapTurnAction:
-    m_UseReference: 0
+    m_UseReference: 1
     m_Action:
       m_Name: Left Hand Snap Turn
-      m_Type: 0
-      m_ExpectedControlType: 
-      m_Id: c902a633-51c8-441f-acbf-ff8382d4e860
+      m_Type: 1
+      m_ExpectedControlType: Button
+      m_Id: b0c34281-ea78-49b3-a10f-b7b75e2de279
       m_Processors: 
       m_Interactions: 
-      m_SingletonActionBindings:
-      - m_Name: 
-        m_Id: 0917b581-79fc-4990-9804-5b5bfb820b01
-        m_Path: <OculusTouchController>{LeftHand}/triggerPressed
-        m_Interactions: 
-        m_Processors: 
-        m_Groups: 
-        m_Action: Left Hand Snap Turn
-        m_Flags: 0
+      m_SingletonActionBindings: []
       m_Flags: 0
     m_Reference: {fileID: 0}
   m_RightHandSnapTurnAction:
@@ -6595,13 +6587,13 @@ MonoBehaviour:
       m_Name: Right Hand Snap Turn
       m_Type: 0
       m_ExpectedControlType: 
-      m_Id: e440b922-aa87-4224-b4ab-312a0d73540a
+      m_Id: 38744070-2cb9-4bf5-a49f-e79fe91f7d75
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings:
       - m_Name: 
-        m_Id: aa5dec17-e99c-42f0-aad7-33cb9c563981
-        m_Path: <OculusTouchController>{RightHand}/triggerPressed
+        m_Id: eadc6c1c-c8e2-4d90-aa9a-4531b5779e7e
+        m_Path: '*/{GripButton}'
         m_Interactions: 
         m_Processors: 
         m_Groups: 
