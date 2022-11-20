@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Room0.unity
     guid: b9eedf99fcc02dc4e9101b8ca0c12848
   - enabled: 1
+    path: Assets/Scenes/RoomFinal.unity
+    guid: 18446a044e827c749acda81d95fe0242
+  - enabled: 1
     path: Assets/Scenes/Room1.unity
     guid: 2a37a86c1cfa51141b81a2727ac95168
   - enabled: 1
@@ -29,6 +32,24 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Room6.unity
     guid: 94b354dccfc79624dac748bac163ba7a
+  - enabled: 1
+    path: Assets/Scenes/Room7.unity
+    guid: 830f7523ed61895458c9baeb238fa04e
+  - enabled: 1
+    path: Assets/Scenes/Room8.unity
+    guid: d1f13421a954a024f82bf668d2d0a22b
+  - enabled: 1
+    path: Assets/Scenes/Room9.unity
+    guid: ef64c3d3ac57c6149b76111638ab00fb
+  - enabled: 1
+    path: Assets/Scenes/Room10.unity
+    guid: 13967bd259bb697428b5661580234532
+  - enabled: 1
+    path: Assets/Scenes/Room11.unity
+    guid: 716a6cfed3d85d34f97f1821ce50bbc8
+  - enabled: 1
+    path: Assets/Scenes/Room12.unity
+    guid: 7529b1864f0a48d4c925266042c66708
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260,
       type: 2}
