@@ -11,7 +11,7 @@ public class player_movement : MonoBehaviour
     private Vector2 inputAxis;
     private CharacterController character;
     private float fallingSpeed = -10;
-
+    public float additionalHeight = 0.2f;
     
     public float speed = 3f;
     private XROrigin rig;
@@ -34,9 +34,16 @@ public class player_movement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        CapsuleFolllowHeadset();
         Quaternion headYaw = Quaternion.Euler(0, rig.Camera.transform.eulerAngles.y, 0);
         Vector3 direction = headYaw * new Vector3(inputAxis.x, 0, inputAxis.y);
         character.Move(direction * speed * Time.fixedDeltaTime);
         character.Move(Vector3.up * fallingSpeed * Time.fixedDeltaTime);
+    }
+
+    void CapsuleFolllowHeadset()
+    {
+        Vector3 capsuleCenter = transform.InverseTransformPoint(rig.Camera.transform.position);
+        character.center = new Vector3(capsuleCenter.x, capsuleCenter.y + character.skinWidth, capsuleCenter.z);
     }
 }
