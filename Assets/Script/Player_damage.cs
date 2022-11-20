@@ -35,7 +35,7 @@ public class Player_damage : MonoBehaviour
 
             movement.speed = 0;
             isdead = true;
-            transform.position = RespawnPlayer.position;
+            
             StartCoroutine(Killplayer());
 
         }
@@ -47,7 +47,7 @@ public class Player_damage : MonoBehaviour
         yield return new WaitForSeconds(2);
 
         //Debug.Log("Respawn");
-
+        transform.position = RespawnPlayer.position;
         movement.speed = 4;
         controller.enabled = true;
         isdead = false;
