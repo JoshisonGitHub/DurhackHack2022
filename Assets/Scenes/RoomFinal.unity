@@ -6545,6 +6545,7 @@ GameObject:
   - component: {fileID: 951514942}
   - component: {fileID: 951514948}
   - component: {fileID: 951514949}
+  - component: {fileID: 951514950}
   m_Layer: 0
   m_Name: VR rig
   m_TagString: Player
@@ -6696,6 +6697,18 @@ MonoBehaviour:
         m_Flags: 0
       m_Flags: 0
     m_Reference: {fileID: 0}
+--- !u!114 &951514950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 951514941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfd957e9e4a0d614dbbd9ada44214f5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &970285889
 PrefabInstance:
   m_ObjectHideFlags: 0
