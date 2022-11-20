@@ -43,8 +43,8 @@ public class player_movement : MonoBehaviour
 
     void CapsuleFolllowHeadset()
     {
-        character.height = rig.CameraInOriginSpaceHeight + additionalHeight;
         Vector3 capsuleCenter = transform.InverseTransformPoint(rig.Camera.transform.position);
-        character.center = new Vector3(capsuleCenter.x, capsuleCenter.y / 2 + character.skinWidth, capsuleCenter.z);
+        character.center = new Vector3(capsuleCenter.x, capsuleCenter.y / 2, capsuleCenter.z);
+        character.height = capsuleCenter.y;
     }
 }

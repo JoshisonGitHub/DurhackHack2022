@@ -6449,7 +6449,7 @@ GameObject:
   - component: {fileID: 951514943}
   - component: {fileID: 951514942}
   - component: {fileID: 951514948}
-  - component: {fileID: 951514947}
+  - component: {fileID: 951514949}
   m_Layer: 0
   m_Name: VR rig
   m_TagString: Player
@@ -6538,7 +6538,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &951514947
+--- !u!114 &951514948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 951514941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03a5df2202a8b96488c744be3bd0c33e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Timeout: 10
+  m_XROrigin: {fileID: 951514945}
+--- !u!114 &951514949
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6561,12 +6575,12 @@ MonoBehaviour:
       m_Name: Left Hand Snap Turn
       m_Type: 0
       m_ExpectedControlType: 
-      m_Id: 786bb004-4c84-48e9-9432-d8fc25730409
+      m_Id: c902a633-51c8-441f-acbf-ff8382d4e860
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings:
       - m_Name: 
-        m_Id: 7c693a94-22a3-4891-8eca-3ab10fe1b2e8
+        m_Id: 0917b581-79fc-4990-9804-5b5bfb820b01
         m_Path: <OculusTouchController>{LeftHand}/triggerPressed
         m_Interactions: 
         m_Processors: 
@@ -6581,12 +6595,12 @@ MonoBehaviour:
       m_Name: Right Hand Snap Turn
       m_Type: 0
       m_ExpectedControlType: 
-      m_Id: f7974dd8-5385-460b-912d-2542cf217154
+      m_Id: e440b922-aa87-4224-b4ab-312a0d73540a
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings:
       - m_Name: 
-        m_Id: a9e5fff3-b9b7-472d-bffe-fb1644260348
+        m_Id: aa5dec17-e99c-42f0-aad7-33cb9c563981
         m_Path: <OculusTouchController>{RightHand}/triggerPressed
         m_Interactions: 
         m_Processors: 
@@ -6595,20 +6609,6 @@ MonoBehaviour:
         m_Flags: 0
       m_Flags: 0
     m_Reference: {fileID: 0}
---- !u!114 &951514948
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 951514941}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03a5df2202a8b96488c744be3bd0c33e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Timeout: 10
-  m_XROrigin: {fileID: 0}
 --- !u!1001 &970285889
 PrefabInstance:
   m_ObjectHideFlags: 0
