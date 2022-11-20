@@ -23,6 +23,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Room4.unity
     guid: 71fa0459f1876404bb020096c244fa2f
+  - enabled: 1
+    path: Assets/Scenes/Room5.unity
+    guid: 81669561a7e7e634e9fab34ba2d901da
+  - enabled: 1
+    path: Assets/Scenes/Room6.unity
+    guid: 94b354dccfc79624dac748bac163ba7a
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260,
       type: 2}
