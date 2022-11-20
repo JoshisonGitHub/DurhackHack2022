@@ -16144,6 +16144,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1332880455}
+  - component: {fileID: 1332880456}
   m_Layer: 0
   m_Name: Camera Offset
   m_TagString: Player
@@ -16167,6 +16168,18 @@ Transform:
   m_Father: {fileID: 2073822933}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &1332880456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1332880454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01d3db0434ab70c43a1705fae57d4760, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1335725039 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1784041511182927649, guid: e8e1abe10710e154eb46fc8ad7b075cc,
@@ -23940,7 +23953,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 322a8316f2cc67a4384f02ccab69cf22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RespawnPlayer: {fileID: 0}
+  RespawnPlayer: {fileID: 1246243338}
 --- !u!143 &2073822930
 CharacterController:
   m_ObjectHideFlags: 0
