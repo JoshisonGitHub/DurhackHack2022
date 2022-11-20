@@ -36,7 +36,7 @@ public class Player_damage : MonoBehaviour
         {
             //AudioSource.PlayClipAtPoint(deathClip, this.transform.position);
             
-            dead.Play();
+            //dead.Play();
 
             Debug.Log("Player Death");
             controller.enabled= false;

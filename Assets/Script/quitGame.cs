@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class quitGame : MonoBehaviour
 {
@@ -20,6 +21,7 @@ public class quitGame : MonoBehaviour
     {
         if (other.gameObject.tag.Equals("Player"))
         {
+            Debug.Log("test");
             Application.Quit();
         }
     }
