@@ -20,6 +20,9 @@ public class Player_damage : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //GameObject.FindGameObjectWithTag("Music").GetComponent<Music_Manager>().PlayMusic();
+
+
         controller = GetComponent<CharacterController>();
         movement = GetComponent<player_movement>();
     }

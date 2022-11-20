@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class Music_Manager : MonoBehaviour
 {
-    private AudioSource _audioSource;
+    public AudioSource _audioSource;
     private void Awake()
     {
         DontDestroyOnLoad(transform.gameObject);
-        _audioSource = GetComponent<AudioSource>();
+        
+        //_audioSource = GameObject.FindGameObjectWithTag("Audiothing").GetComponent<AudioSource>();
     }
 
     public void PlayMusic()
