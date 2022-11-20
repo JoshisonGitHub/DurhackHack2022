@@ -12,6 +12,8 @@ public class Player_damage : MonoBehaviour
     private bool isdead = false;
 
     private player_movement movement;
+
+    public AudioClip deathClip;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,6 +34,8 @@ public class Player_damage : MonoBehaviour
             
             Debug.Log("Player Death");
             controller.enabled= false;
+
+            AudioSource.PlayClipAtPoint(deathClip, this.transform.position);
 
             movement.speed = 0;
             isdead = true;
