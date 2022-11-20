@@ -9,7 +9,7 @@ public class Respawnplayer : MonoBehaviour
     
     private SphereCollider sphere;
 
-    public bool insafezone = false;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +22,8 @@ public class Respawnplayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+
 
     }
 
@@ -29,15 +31,16 @@ public class Respawnplayer : MonoBehaviour
     {
         if (other.gameObject.tag.Equals("Player"))
         {
-            insafezone = true;
-            //Debug.Log("next");
+
+            
+            
             respawnplayer.transform.position = this.transform.position;
             respawnplayer.transform.position = new Vector3(respawnplayer.transform.position.x, respawnplayer.transform.position.y+1, respawnplayer.transform.position.z);
-            sphere.enabled = false;
+            //sphere.enabled = false;
         }
-        else
-        {
-            insafezone = false;
-        }
+        
+        
     }
+
+    
 }

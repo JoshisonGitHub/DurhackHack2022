@@ -15,7 +15,7 @@ public class Enemy_move_script : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
         startpos = pos1;
         nextPos = startpos.position;
         circleCollider2D = GetComponent<CircleCollider2D>();
@@ -52,3 +52,5 @@ public class Enemy_move_script : MonoBehaviour
         nextPos = pos1.position;
     }
 }
+
+    

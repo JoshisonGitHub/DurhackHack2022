@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 4302892576644799490}
   m_Layer: 0
   m_Name: green cube
-  m_TagString: Untagged
+  m_TagString: green
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -113,6 +113,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   respawnplayer: {fileID: 8356153968661644582, guid: d4d5614aea8df384c9b34a67e8989ea0,
     type: 3}
+  insafezone: 0
 --- !u!135 &4302892576644799490
 SphereCollider:
   m_ObjectHideFlags: 0
