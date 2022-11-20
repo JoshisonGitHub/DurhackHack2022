@@ -9,14 +9,14 @@ public class Player_damage : MonoBehaviour
 
     private CharacterController controller;
 
-    private bool isdead = false;
+    
 
     private player_movement movement;
 
     public AudioClip deathClip;
 
     public AudioSource dead;
-    public float volume = 20f;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -36,7 +36,7 @@ public class Player_damage : MonoBehaviour
         {
             //AudioSource.PlayClipAtPoint(deathClip, this.transform.position);
             
-            //dead.Play();
+            dead.Play();
 
             Debug.Log("Player Death");
             controller.enabled= false;
@@ -44,7 +44,7 @@ public class Player_damage : MonoBehaviour
             
 
             movement.speed = 0;
-            isdead = true;
+           
             
             StartCoroutine(Killplayer());
 
@@ -60,7 +60,7 @@ public class Player_damage : MonoBehaviour
         transform.position = RespawnPlayer.position;
         movement.speed = 4;
         controller.enabled = true;
-        isdead = false;
+        
     }
     
     

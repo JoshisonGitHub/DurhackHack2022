@@ -6474,7 +6474,6 @@ MonoBehaviour:
   RespawnPlayer: {fileID: 540521169}
   deathClip: {fileID: 8300000, guid: ce5623d253e11324bbde4b81484e81fe, type: 3}
   dead: {fileID: 1514849485}
-  volume: 1
 --- !u!143 &1033506954
 CharacterController:
   m_ObjectHideFlags: 0
