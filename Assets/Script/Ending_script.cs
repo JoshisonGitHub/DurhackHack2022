@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Ending_script : MonoBehaviour
 {
-    public GameObject coin;
+    private GameObject coin;
     private BoxCollider box;
     // Start is called before the first frame update
     void Start()
@@ -18,16 +18,14 @@ public class Ending_script : MonoBehaviour
     void Update()
     {
         coin = GameObject.FindWithTag("coin");
+        
 
         if(coin == null)
         {
             box.enabled = true;
         }
 
-        if(box.enabled == true)
-        {
-            
-        }
+        
     }
 
     private void OnTriggerEnter(Collider other)
