@@ -6566,7 +6566,7 @@ MonoBehaviour:
       m_SingletonActionBindings:
       - m_Name: 
         m_Id: 1667af6b-1d3c-4d73-9afa-b1ef8558d7d8
-        m_Path: <OculusTouchController>/primaryButton
+        m_Path: <OculusTouchController>{LeftHand}/gripPressed
         m_Interactions: 
         m_Processors: 
         m_Groups: 
@@ -6586,7 +6586,7 @@ MonoBehaviour:
       m_SingletonActionBindings:
       - m_Name: 
         m_Id: 22ce00c3-1f2f-49e9-909f-d0db923ae3ab
-        m_Path: <OculusTouchController>/secondaryButton
+        m_Path: <OculusTouchController>{RightHand}/gripPressed
         m_Interactions: 
         m_Processors: 
         m_Groups: 
