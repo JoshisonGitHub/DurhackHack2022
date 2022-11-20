@@ -45,6 +45,6 @@ public class player_movement : MonoBehaviour
     {
         Vector3 capsuleCenter = transform.InverseTransformPoint(rig.Camera.transform.position);
         character.center = new Vector3(capsuleCenter.x, capsuleCenter.y / 2, capsuleCenter.z);
-        character.height = capsuleCenter.y;
+        character.height = capsuleCenter.y/10;
     }
 }
