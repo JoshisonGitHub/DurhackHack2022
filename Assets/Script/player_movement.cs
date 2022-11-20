@@ -21,6 +21,7 @@ public class player_movement : MonoBehaviour
         character = GetComponent<CharacterController>();
 
         rig = GetComponent<XROrigin>();
+
     }
 
     // Update is called once per frame
