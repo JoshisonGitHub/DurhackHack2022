@@ -1,4 +1,4 @@
-World's Hardest Game but in VR
+#World's Hardest Game but in VR
 
 A project made in Durhack2022 for the theme: Augmentation
 
